@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Calculator</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="calculator">
+    <input type="text" id="display" disabled>
+    <div class="buttons">
+      <button onclick="clearDisplay()" class="btn btn-secondary">C</button>
+      <button onclick="appendToDisplay('/')" class="btn btn-primary">/</button>
+      <button onclick="modulo()" class="btn btn-primary">%</button>
+      <button onclick="backspace()" class="btn btn-primary">⌫</button>
+      <button onclick="appendToDisplay('9')" class="btn btn-primary">9</button>
+      <button onclick="appendToDisplay('8')" class="btn btn-primary">8</button>
+      <button onclick="appendToDisplay('7')" class="btn btn-primary">7</button>
+      <button onclick="appendToDisplay('+')" class="btn btn-primary">+</button>
+      <button onclick="appendToDisplay('6')" class="btn btn-primary">6</button>
+      <button onclick="appendToDisplay('5')" class="btn btn-primary">5</button>
+      <button onclick="appendToDisplay('4')" class="btn btn-primary">4</button>
+      <button onclick="appendToDisplay('-')" class="btn btn-primary">-</button>
+      <button onclick="appendToDisplay('3')" class="btn btn-primary">3</button>
+      <button onclick="appendToDisplay('2')" class="btn btn-primary">2</button>
+      <button onclick="appendToDisplay('1')" class="btn btn-primary">1</button>
+      <button onclick="appendToDisplay('*')" class="btn btn-primary">*</button>
+      <button onclick="appendToDisplay('0')" class="btn btn-primary">0</button>
+      <button onclick="appendToDisplay('.')" class="btn btn-primary">.</button>
+      <button onclick="squareRoot()" class="btn btn-primary">√</button>
+      <button onclick="calculate()" class="btn btn-success">=</button>
+    </div>
+  </div>
+  <!-- Bootstrap JS -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
